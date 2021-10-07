@@ -36,7 +36,7 @@ This is where Redux comes in to help! Redux is a **predictable state container**
 
 **Action**: A object containing a type and a payload, used to tell the reducer how to update the store.
 
-**Action Creator** a function that takes a payload and creates an action object.
+**Action Creator**: A function that takes a payload and creates an action object. A function that returns an action.
 
 
 
