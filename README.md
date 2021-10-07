@@ -14,7 +14,33 @@ When using Redux you don't actually change the **State**, you create updated cop
 
 **State**: is the condition of something at a particular point in time. A dynamic form of storage that lives in our components. It is a javascript object used by React to represent information about a component's current situation. When state changes, the component responds by re-rendering. 
 
-**Props**: Short for 'properties', they are variables used to pass data from one component to another. From a parent component to child component. Props data is immutable or 'read-only'
+**Props**: Short for 'properties', they are variables used to pass data from one component to another. From a parent component to child component. Props data is immutable or 'read-only'.
+
+## Why Redux?
+
+**React Redux implements many performance optimizations internally, so that your own component only re-renders when it actually needs to.**
+
+Small React apps are fine for using local state (accessible only by the single component since neither its current state nor update functions get passed by props anywhere). But for a large applications, some problems you start to run into are: 
+
+1. Passing State down through more than two components makes all the components rely on each other which is not very scalable. 
+
+2. Using the same State through components that don't have parent/child relationship is redundant, requires additional calls to the backend server. 
+
+This is where Redux comes in to help! Redux is a **predictable state container**. The state is kept in one **store** and components listen to the data in the store that it needs. 
+
+## Redux Terms
+
+**Store / Global State**: It is an object that holds the apps state tree; think of it as a mega state that is accessed and updated with its own functions. It is the Central Location for all of your apps state. There should only be a single store in a Redux app, the composition happens on the reducer level.
+
+**State**: In Redux it usually refers to the single state value that is managed by the store and returned by ```javascript getState() ```. It represents the entire state of a Redux app, and that is often a deeply nested object.
+
+**Action**: A object containing a type and a payload, used to tell the reducer how to update the store.
+
+**Action Creator** a function that takes a payload and creates an action object.
+
+
+
+
 
 
 
