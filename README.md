@@ -36,8 +36,12 @@ This is where Redux comes in to help! Redux is a **predictable state container**
 
 **State**: In Redux it usually refers to the single state value that is managed by the store and returned by `getState()`. It represents the entire state of a Redux app, and that is often a deeply nested object.
 
-**Action**: A object containing a type and a payload, used to tell the reducer how to update the store.
+**Action**: A object containing a type and a payload, used to tell the reducer how to update the store. They are how we communicate with the store.
 
 **Action Creator**: A function that takes a payload and creates an action object. A function that returns an action.
 
 **Reducers**: A reducer is a function that determines changes to the Redux state. It is a pure function that returns a **copy** of the state with new changes. You can have many reducers and combine them all into one **root reducer** that the store uses with `combineReducers` method. This helps organize code white still having everything in one root state tree.
+
+**Payload**: is the key value pairs in your actions and are passed around between reducers in your redux application. ex: `payload: { user: 'Test User', age: '25'}`
+
+**Dispatch**: a function from Redux that sends an action object to its reducer (which updates the store)
