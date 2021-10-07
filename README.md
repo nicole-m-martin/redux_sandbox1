@@ -32,7 +32,7 @@ This is where Redux comes in to help! Redux is a **predictable state container**
 
 **Store / Global State**: It is an object that holds the apps state tree; think of it as a mega state that is accessed and updated with its own functions. It is the Central Location for all of your apps state. There should only be a single store in a Redux app, the composition happens on the reducer level.
 
-**State**: In Redux it usually refers to the single state value that is managed by the store and returned by ```javascript getState() ```. It represents the entire state of a Redux app, and that is often a deeply nested object.
+**State**: In Redux it usually refers to the single state value that is managed by the store and returned by ```getState()```. It represents the entire state of a Redux app, and that is often a deeply nested object.
 
 **Action**: A object containing a type and a payload, used to tell the reducer how to update the store.
 
