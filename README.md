@@ -45,3 +45,8 @@ This is where Redux comes in to help! Redux is a **predictable state container**
 **Payload**: is the key value pairs in your actions and are passed around between reducers in your redux application. ex: `payload: { user: 'Test User', age: '25'}`
 
 **Dispatch**: a function from Redux that sends an action object to its reducer (which updates the store)
+
+**Connect**: The connect function is a higher order function that you guessed it, connects the Redux store to a React component. Used with the parameter called `mapStateToProps` to connect them.
+
+**mapStateToProps**: This function will take any state from the Redux store and pass it to the props of the React component.
+`export default connect(mapStateToProps)()`
